@@ -1,0 +1,111 @@
+@font-face {
+  /* Firefox:
+       See http://stackoverflow.com/questions/2856502/css-font-face-not-working-with-firefox-but-working-with-chrome-and-ie
+  */
+
+     font-family: open_sanslight;
+    src: url('file:///c:/localgit/design-grafik/fonts/OpenSans/opensans-light-webfont.eot');
+    src: url('file:///c:/localgit/design-grafik/fonts/OpenSans/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('file:///c:/localgit/design-grafik/fonts/OpenSans/opensans-light-webfont.woff') format('woff'),
+         url('file:///c:/localgit/design-grafik/fonts/OpenSans/opensans-light-webfont.ttf') format('truetype'),
+         url('file:///c:/localgit/design-grafik/fonts/OpenSans/opensans-light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+
+}
+
+
+body {
+  background: yellow;
+}
+
+.reveal  ul {
+  margin-top:40px;
+  margin-top:0px;
+  margin-left:80px
+}
+
+* {
+    /* font-family: open_sanslight; */
+   font-family: Gill Sans MT; 
+   text-align: left;
+}
+
+div.txt,
+div.zitat
+{
+  font-size:48px;
+}
+
+div.txt {
+  margin-top: 15px;
+}
+
+.reveal b {
+   font-weight: bold;
+}
+
+div.txt > div.zitat {
+  padding-right:30px;
+  padding-left:30px;
+
+}
+
+div.zitat > span.quelle {
+  color:#f00;
+  font-size:38px;
+}
+
+div.zitat > span.quelle:before {content:"("}
+div.zitat > span.quelle:after  {content:")"}
+
+div.txt,
+.reveal h1,
+.reveal h2
+{
+  padding-left:25px;
+  padding-right:15px;
+}
+
+.reveal .zitat {
+  color: #194;
+  font-style: italic;
+  font-family: Garamond;
+}
+
+
+.reveal .slides>section {
+ margin:0;
+ padding:0;
+ border: 1px solid red;
+ background-color:white;
+ height:768px;
+ width:1024px;
+  min-height: 90%;*/
+}
+
+.reveal .slides>section>section {
+ margin:0px;
+ margin:0px;
+ padding:0px;
+ position-top: 100px;
+ background-color: white;
+}
+
+.reveal h1 {
+  font-size: 80px;
+  font-weight: bold;
+  background-color: #e0e0f0;
+  color: black;w
+  margin-bottom:0px;
+  padding-top:2px;
+  padding-bottom:5px;
+}
+
+.reveal h2 {
+  font-size: 60px;
+  background-color: #e0fff0;
+  color:black;
+  margin-bottom: 9px;
+  padding-top:2px;
+  padding-bottom:5px;
+}
