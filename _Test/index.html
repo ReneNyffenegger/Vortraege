@@ -11,7 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <link rel="stylesheet" href="../reveal.js/css/reveal.min.css">
-    <link rel="stylesheet" href="../reveal.js/css/theme/beige.css" id="theme">
+      <link rel="stylesheet" href="../_Zubehoer/Vortraege.css" id="theme">  
+      <!-- <link rel="stylesheet" href="../reveal.js/css/theme/beige.css" id="theme"> --> 
+    
 
 
     <!-- If the query includes 'print-pdf', use the PDF print sheet -->
@@ -29,14 +31,112 @@
       <div class="slides">
         
         <section><h1>Erster Slide</h1> <!--{-->
+            <div class="txt">
+              Hallo Welt.
+            </div>
+            <div class="txt">
+              <i>Italic</i>, <b>Bold</b> und <i><b>Italic Bold</b></i>.
+            </div>
+            
+            <div class="txt">
+              Und nun... der nächste Slide!
+            </div>
+              
         </section> <!--}-->
 
         <section><h1>Zweiter Slide</h1> <!--{--> 
+          <section><h2>Erste Sektion</h2> <!--{-->
+            <div class='txt'>
+              «Nach unten» geht zur zweiten Sektion
+            </div>
+            <div class="txt">
+              Sowohl hier wie auch in der zweiten Sektion kommt man mit «nach rechts» zum dritten Slide.
+            </div>
+          </section> <!--}-->
+          <section><h2>Zweite Sektion: Foo, bar oder baz</h2> <!--{-->
+            <div class="txt">
+             Foo oder Bar, oder Baz?
+            </div>
+            <div class="txt">
+              Mit einer Liste <ul>
+                 <li>Foo
+                 <li>Bar
+                 <li>Baz
+                </ul>
+            </div>
+            
+          </section> <!--}-->
         </section> <!--}-->
 
-        <section><h1>Dritter Slide</h1> <!--{-->
+        <section><h1>Dritter Slide: Fragments</h1> <!--{-->
+
+          <section><h2>Section eins, drei Fragmente</h2> <!--{-->
+                
+            <div class="txt fragment">
+              Erstes Fragment
+            </div>
+            <div class="txt fragment">
+              Zweites Fragment
+            </div>
+            <div class="txt fragment">
+              Drittes Fragment
+            </div>
+          </section> <!--}-->
+
+          <section><h2>Section zwei, weitere drei Fragmente</h2> <!--{-->
+            <div class="txt fragment">
+              viertes Fragment
+            </div>
+            <div class="txt fragment">
+              Fünftes Fragment
+            </div>
+            <div class="txt fragment">
+              Sechstes Fragment
+            </div>
+          </section> <!--}-->
+
+          <section><h2>Section drei, ul als Fragmente</h2> <!--{-->
+            <div class="txt">
+              Es folgen drei wichtige Punkte:
+              <ul>
+                <li class='fragment'>Erstens: nie!
+                <li class='fragment'>Zweitens: immer!
+                <li class='fragment'>Drittens: manchmal!
+              </ul>
+            </div>
+          </section> <!--}-->
+            
         </section> <!--}-->
 
+        <section><h1>Vierter Slide: Zitate</h1> <!--{-->
+
+
+            <div class="txt">
+              Ein <b>normales</b> Zitat:
+              <div class="zitat">
+                 Der Krug geht zum Brunnen, bis er bricht. Und wenn er gebrochen ist, geht er nicht mehr zum Brunnen.
+              </div>
+            </div>
+            
+
+            <div class="txt">
+              Ein Zitat mit einer <b>Quelle</b>
+              <div class="zitat">
+                 Die Flinte ins Korn werfen bringt ausser Spesen nix und ist nix gewesen.
+                 <span class="quelle">Unbekannt</span>
+              </div>
+            </div>
+            
+        </section> <!--}-->
+
+        <section><h1>Fünfter Slide: Bilder</h1> <!--{-->
+          <section><h2>Bild 1: 500 x 300 px</h2> <!--{-->
+              <img src="img_500x300_100_50_200_0.png" ></img> 
+          </section> <!--}-->
+          <section><h2>Bild 2: 1000 x 600 px</h2> <!--{-->
+              <img src="img_1000x600_100_50_200_0.png" ></img> 
+          </section> <!--}-->
+        </section> <!--}-->
 
       </div>
     </div>  
