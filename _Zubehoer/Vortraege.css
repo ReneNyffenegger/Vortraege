@@ -55,6 +55,11 @@ div.zitat > span.quelle {
   font-size:38px;
 }
 
+div.zitat em {
+  color: #a55;
+  font-weight:bold;
+}
+
 div.zitat > span.quelle:before {content:"("}
 div.zitat > span.quelle:after  {content:")"}
 
