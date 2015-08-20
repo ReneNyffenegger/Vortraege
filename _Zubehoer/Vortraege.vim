@@ -81,9 +81,35 @@ fu! <SID>InsertTextDiv()  " {
   return ''
 
 endfu " }
+fu! <SID>InsertBibelVers() " {
+  call TQ84_log_indent(expand('<sfile>'))
 
-inoremap <buffer> sld =<SID>InsertSlide()<CR>
-inoremap <buffer> sct =<SID>InsertSection()<CR>
-inoremap <buffer> txt =<SID>InsertTextDiv()<CR>
+  let l:vers = Bibel#EingabeBuchKapitelVers()
+  let l:text = Bibel#VersText(l:vers)
+  let l:id   = Bibel#VersID  (l:vers)
+
+  let l:lines = [
+   \'            <div class="txt">',
+   \'              <div class="zitat">',
+   \'                 ' . l:text ,
+   \'                 <span class="quelle">' . l:id . '</span>',
+   \'              </div>',
+   \'            </div>' ]
+
+  call GUI#InsertLines(l:lines)
+  
+  call TQ84_log_dedent()
+  return ''
+endfu " }
+
+inoremap <buffer> ,sld  =<SID>InsertSlide()<CR>
+inoremap <buffer> ,sct  =<SID>InsertSection()<CR>
+inoremap <buffer> ,txt  =<SID>InsertTextDiv()<CR>
+inoremap <buffer> ,vrs  =<SID>InsertBibelVers()<CR>
+
+nnoremap <buffer> ,sld i=<SID>InsertSlide()<CR>
+nnoremap <buffer> ,sct i=<SID>InsertSection()<CR>
+nnoremap <buffer> ,txt i=<SID>InsertTextDiv()<CR>
+nnoremap <buffer> ,vrs i=<SID>InsertBibelVers()<CR>
 
 call TQ84_log_dedent()
