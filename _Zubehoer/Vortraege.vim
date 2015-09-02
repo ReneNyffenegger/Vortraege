@@ -85,6 +85,13 @@ fu! <SID>InsertBibelVers() " {
   call TQ84_log_indent(expand('<sfile>'))
 
   let l:vers = Bibel#EingabeBuchKapitelVers()
+  if keys(l:vers) == []
+    call TQ84_log('Ctrl-C gedrückt')
+    call TQ84_log_dedent()
+    return ''
+  endif
+
+  call TQ84_log('l:vers = ' . string(l:vers))
   let l:text = Bibel#VersText(l:vers)
   let l:id   = Bibel#VersID  (l:vers)
 
