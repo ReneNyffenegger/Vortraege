@@ -92,7 +92,7 @@ fu! <SID>InsertBibelVers() " {
   endif
 
   call TQ84_log('l:vers = ' . string(l:vers))
-  let l:text = Bibel#VersText(l:vers)
+  let l:text = Bibel#VersText(l:vers, 'eue')
   let l:id   = Bibel#VersID  (l:vers)
 
   let l:lines = [
