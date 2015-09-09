@@ -97,11 +97,16 @@ fu! <SID>InsertBibelVers() " {
 
   let l:lines = [
    \'            <div class="txt">',
-   \'              <div class="zitat">',
-   \'                 ' . l:text ,
+   \'              <div class="zitat">'
+   \]
+
+  call extend(l:lines, split(Text#Wrap(l:text, 100, 17), "\n"))
+
+  call extend(l:lines, [
    \'                 <span class="quelle">' . l:id . '</span>',
    \'              </div>',
-   \'            </div>' ]
+   \'            </div>' ])
+
 
   call GUI#InsertLines(l:lines)
   
