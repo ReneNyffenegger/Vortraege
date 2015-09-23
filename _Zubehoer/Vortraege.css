@@ -53,6 +53,7 @@ div.txt > div.zitat {
 div.zitat > span.quelle {
   color:#f00;
   font-size:38px;
+  white-space:nowrap;
 }
 
 div.zitat em,
